@@ -214,9 +214,23 @@
     /* 푸터 */
     .footer{
       height: 67px;
-      background: rgba(0,255,255,0.2);
+      background: #474747;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
     }
 
+    .footer>p{
+      font-weight: bold;
+      font-size: 12px;
+      color: #fff;
+      text-shadow: 1px 1px 1px black;
+    }
+
+    .footer>p:first-child{
+      margin-bottom: -1px;
+    }
 
 
 
@@ -327,6 +341,7 @@
       /* 푸터 */
       .footer{
         height: 91px;
+        flex-flow: row nowrap;
       }
     }
 
@@ -437,6 +452,12 @@
         height: 262px;
         order: 7;
       }
+
+      /* 푸터 */
+      .footer{
+        justify-content: flex-start;
+        padding-left: 3.125%;
+      }
     }
 
 
@@ -486,7 +507,10 @@
       <article class="web_std">웹표준</article>
       <article class="sns">sns</article>
     </section>
-    <footer class="footer">footer</footer>
+    <footer class="footer">
+      <p>COPYRIGHTⓒ 2014.FLAT DESIGN</p>
+      <p>BLOG ALL RIGHTS RESERVED.</p>
+    </footer>
   </div>
 </body>
 </html>
